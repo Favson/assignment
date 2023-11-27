@@ -39,7 +39,7 @@
             var base = Number(prompt("Input the base value"))
             var height = Number(prompt("Input the height value"))
             var area =(half*(base*height)).toFixed(2)
-            document.getElementById('displayresults').innerHTML = "The area of a triangle is "+area +"cm^2"
+            document.getElementById('displayresults').innerHTML = "Area = "+area +"cm^2"
         }
         //Area of a circle
         function areaofcircle(){
@@ -47,13 +47,13 @@
             var radius = Number(prompt("Enter the radius value"))
             var area =(pi *(radius**2)).toFixed(2)
             console.log("A="+answer + "cm^2")
-            document.getElementById('displayresults').innerHTML = "The area of a triangle is "+area +"cm^2"
+            document.getElementById('displayresults').innerHTML = "A = "+area +"cm^2"
         }
         //Area of a square
         function areaofsquare(){
             var area =Number(prompt("Enter the values"))
             var answer=("A="+area**2 +"cm^2").toFixed(2)
-            document.getElementById('displayresults').innerHTML = "The area of a triangle is "+answer +"cm^2"
+            document.getElementById('displayresults').innerHTML = "A = "+answer +"cm^2"
         }
 
         //area of a Quadrilateral
@@ -61,7 +61,7 @@
             var base =Number(prompt('Enter the base value'))
             var height = Number(prompt('Enter the height value'))
             var area =(base*height).toFixed(2)
-            document.getElementById('displayresults').innerHTML = "The area of a triangle is "+area +"cm^2"
+            document.getElementById('displayresults').innerHTML = "A ="+area +"cm^2"
         }
         //Area Of Rhombus
         function areaOfRhombus(){
@@ -69,30 +69,31 @@
             var p =Number(prompt("Enter the first Diagonal value"))
             var q =Number(prompt("Enter the second Diagonal value"))
             var answer = (half *(p*q)).toFixed(2)
-            console.log("A ="+answer +"cm^2")
+            document.getElementById('displayresults').innerHTML = "A = "+area +"cm^2"
         }
         //Area Of a Trapezium
         function areaOfTrapezium(){
             var firstbase =Number(prompt("Enter the first base value"))
             var base = Number(prompt("Enter the base"))
             var height = Number(prompt("Enter the height value"))
-            var answer = ((firstbase + base)/2 * height).toFixed(2)
-            console.log("A ="+ answer +"cm^2")
+            var area = ((firstbase + base)/2 * height).toFixed(2)
+            document.getElementById('displayresults').innerHTML = "A = "+area +"cm^2"
         }
         //Area Of a parallelogram
         function areaofparallelogram(){
             var base =Number(prompt('Enter the base value'))
             var height = Number(prompt("Enter the height value"))
-            var answer = (base*height).toFixed(2)
-            console.log(answer)
+            var area = (base*height).toFixed(2)
+            document.getElementById('displayresults').innerHTML = "A =  "+area +"cm^2"
         }
 
         //the body mass index.
         function bodymassindex(){
              var mass =Number(prompt("input weight value in kg"))
              var height = Number(prompt("input the height value in m^2"))
-             var answer =(mass / (height**2)).toFixed(2)
+             var BMI =(mass / (height**2)).toFixed(2)
              console.log("BMI ="+ answer)
+             document.getElementById('displayresults').innerHTML = "BMi = "+BMI +"cm^2"
         }
     </script>
 </body>
