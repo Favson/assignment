@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Hello World</h1>
+        <h3>Welcome to Favson world of calculations input all values needed and get your work done with lesser time and with ease</h3>
+        <div class="formular" style="margin-left: 410px">
+            <button onclick="areaOfTriangle()" class="p-2 text-center text-dark">Area of a triangle</button>
+            <button onclick="areaofcircle()" style="padding: 10px; color:white;  background-color:brown">Area of a circle</button>      
+        </div>
+        <div class="formular">
+            <button onclick="areaofsquare()" style="padding: 10px; color:white;  background-color:brown">Area of a square</button>
+            <button onclick="areaofquadrilateral()" style="padding: 10px; color:white;  background-color:brown">Area of a Quadrilateral</button>
+        </div>
+        <div class="formular">
+            <button onclick="areaOfRhombus()" style="padding: 10px; color:white;  background-color:brown">Area of a Rhombus</button>
+            <button onclick="areaOfTrapezium()" style="padding: 10px; color:white;  background-color:brown">Area of a Trapezium</button>
+        </div>
+        <div class="formular">
+            <button onclick="areaofparallelogram()" style="padding: 10px; color:white;  background-color:brown">Area of a Parallelogram</button>  
+
+            <button onclick="bodymassindex()" style="padding: 10px; color:white;  background-color:brown">The body mass index (BMI)</button>
+        </div>
+        <div id="displayresults"></div>
+    </div>
+    <script>
+        //Area of a Triangle
+        function areaOfTriangle(){
+            var half = 1/2
+            var base = Number(prompt("Input the base value"))
+            var height = Number(prompt("Input the height value"))
+            var area =(half*(base*height)).toFixed(2)
+            document.getElementById('displayresults').innerHTML = "The area of a triangle is "+area +"cm^2"
+        }
+        //Area of a circle
+        function areaofcircle(){
+            var pi = 22/7
+            var radius = Number(prompt("Enter the radius value"))
+            var area =(pi *(radius**2)).toFixed(2)
+            console.log("A="+answer + "cm^2")
+            document.getElementById('displayresults').innerHTML = "The area of a triangle is "+area +"cm^2"
+        }
+        //Area of a square
+        function areaofsquare(){
+            var area =Number(prompt("Enter the values"))
+            var answer=("A="+area**2 +"cm^2").toFixed(2)
+            document.getElementById('displayresults').innerHTML = "The area of a triangle is "+answer +"cm^2"
+        }
+
+        //area of a Quadrilateral
+        function areaofquadrilateral(){
+            var base =Number(prompt('Enter the base value'))
+            var height = Number(prompt('Enter the height value'))
+            var area =(base*height).toFixed(2)
+            document.getElementById('displayresults').innerHTML = "The area of a triangle is "+area +"cm^2"
+        }
+        //Area Of Rhombus
+        function areaOfRhombus(){
+            var half = 1/2
+            var p =Number(prompt("Enter the first Diagonal value"))
+            var q =Number(prompt("Enter the second Diagonal value"))
+            var answer = (half *(p*q)).toFixed(2)
+            console.log("A ="+answer +"cm^2")
+        }
+        //Area Of a Trapezium
+        function areaOfTrapezium(){
+            var firstbase =Number(prompt("Enter the first base value"))
+            var base = Number(prompt("Enter the base"))
+            var height = Number(prompt("Enter the height value"))
+            var answer = ((firstbase + base)/2 * height).toFixed(2)
+            console.log("A ="+ answer +"cm^2")
+        }
+        //Area Of a parallelogram
+        function areaofparallelogram(){
+            var base =Number(prompt('Enter the base value'))
+            var height = Number(prompt("Enter the height value"))
+            var answer = (base*height).toFixed(2)
+            console.log(answer)
+        }
+
+        //the body mass index.
+        function bodymassindex(){
+             var mass =Number(prompt("input weight value in kg"))
+             var height = Number(prompt("input the height value in m^2"))
+             var answer =(mass / (height**2)).toFixed(2)
+             console.log("BMI ="+ answer)
+        }
+    </script>
+</body>
+</html>
